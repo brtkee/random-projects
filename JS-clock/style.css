@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&family=Noto+Sans&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&display=swap');
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    outline: none;
+}
+
+body{
+    background-color: rgb(48, 48, 48);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#clock{
+    background-color: black;
+    width: 50%;
+    font-size: 5rem;
+    color:rgb(13, 194, 218);
+    text-align: center;
+    border-radius: 15px;
+    padding: 1em 2em 1em 2em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media (max-width:768px) {
+    #clock{
+        width: 100%;
+        font-size: 2.5rem;
+        color:rgb(13, 194, 218);
+        text-align: center;
+        border-radius: 15px;
+        padding: 1em 2em 1em 2em;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+}
