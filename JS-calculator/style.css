@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&family=Noto+Sans&family=PT+Mono&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&display=swap');
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    outline: none;
+}
+
+#content{
+    min-height: 100vh;
+    display:grid;
+    place-items: center;
+    font-family: 'PT Mono', monospace;
+}
+
+#calculator{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding:2em;
+    & #operation-screen{
+        width: 100%;
+        height: 80px; /* Przykładowa wysokość */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        margin-bottom: 2em;
+        padding: 1.2em;
+        font-size: 1.4rem;
+        text-align: right;
+        font-weight: 900;
+        overflow-x: auto; 
+    }
+    & #buttons{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap:2em;
+    }
+
+    & #buttons > * {
+        padding: 1em 2.5em 1em 2.5em;
+        cursor: pointer;
+        background-color: rgba(235, 235, 235, 0.74);
+        border: 1px solid rgb(201, 201, 201);
+        border-radius: 1px;
+        font-size: 1rem;
+        transition: all ease-in-out 300ms;
+    }
+
+    & #buttons > *:hover:not(:last-child){
+        background-color: rgba(235, 235, 235, 0.658);
+        border: 1px solid rgba(235, 235, 235, 0.877);
+    }
+
+    & #result{
+        height: 100%;
+       grid-row: -1/ -5;
+       grid-column: 4;
+       background-color: rgb(14, 88, 173);
+       color:white;
+       border: 1px solid rgb(14, 88, 173);
+       transition: background-color ease-in-out 300ms;
+    }
+
+    & #result:hover{
+        background-color: rgba(14, 88, 173, 0.753);
+
+    }
+
+}
