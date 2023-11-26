@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quiz-card{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 500px;
+    padding:2em;
+    & .question{
+        margin: 0em 0em 1em 0em ;
+        font-weight: bold
+    }
+    & .answers{
+        list-style: none;
+
+    }
+    & #submit{
+        margin-top: 2em;
+        width: 100%;
+        padding: 0.5em;
+        color:white;
+        background-color: rgb(148, 30, 148);
+        border: none;
+        outline: none;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+        transition: all ease-in-out 300ms;
+    }
+    & #submit:hover{
+        background-color: rgb(121, 22, 121);
+    }
+    & #submit:focus{
+        background-color: rgb(97, 13, 97);
+    }
+}
